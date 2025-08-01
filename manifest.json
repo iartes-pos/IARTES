@@ -1,0 +1,33 @@
+{
+  "name": "IARTES - Inteligência Artificial para Engenharia de Testes de Software",
+  "short_name": "IARTES",
+  "description": "Projeto IARTES da UFAC oferece treinamento em Inteligência Artificial para Engenharia de Testes de Software",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0563bb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/img/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/logos.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "technology", "programming"],
+  "lang": "pt-BR",
+  "scope": "/",
+  "related_applications": [],
+  "prefer_related_applications": false
+}
