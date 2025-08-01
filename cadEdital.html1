@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>WebAcademy</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #f1f1f1;
+    }
+
+    .centralizando {
+        margin: auto;
+        align-items: center;
+    }
+
+    #regForm {
+        background-color: #ffffff;
+        margin: 20px auto;
+        font-family: Raleway;
+        padding: 40px;
+        width: 70%;
+        min-width: 300px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    input {
+        padding: 10px;
+        width: 100%;
+        font-size: 17px;
+        font-family: Raleway;
+        border: 1px solid #aaaaaa;
+    }
+
+    /* Mark input boxes that gets an error on validation: */
+    input.invalid {
+        background-color: #ffdddd;
+    }
+
+    /* Hide all steps by default: */
+    .tab {
+        display: none;
+    }
+
+    button {
+        background-color: #04AA6D;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 17px;
+        font-family: Raleway;
+        cursor: pointer;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+    #prevBtn {
+        background-color: #bbbbbb;
+    }
+
+    /* Make circles that indicate the steps of the form: */
+    .step {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbbbbb;
+        border: none;
+        border-radius: 50%;
+        display: inline-block;
+        opacity: 0.5;
+    }
+
+    .step.active {
+        opacity: 1;
+    }
+
+    /* Mark the steps that are finished and valid: */
+    .step.finish {
+        background-color: #04AA6D;
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">HOME</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <!-- <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div> -->
+
+    </nav>
+<div class="text-center" style="background-color: #ffffff;">
+            <img src="assets/img/logos.png" class="img-fluid " alt="">
+        </div>
+    <div class="container">
+
+        
+
+        <h3 class="text-center mt-3">Cadastro EDITAL Nº 01/2021/PPGCC/WEB, DE 13 DE DEZEMBRO DE 2021</h3>
+
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <p><b>Identificação</b></p>
+                <p><input placeholder="Telefone só números" class="form-control" name="phone"></p>
+                <p><input placeholder="Endereço" class="form-control" name="lname"></p>
+                <p><input placeholder="Data de Nascimento dd/mm/yyyy" class="form-control" name="lname"></p>
+                <br>
+                <p class="text-right"><button type="submit" class="btn btn-primary">CADASTRAR</button></p>
+            </div>
+
+            <div class="col">
+
+                                <p><b>Nome:</b> Frederico de Oliveira Tavares</p>
+                                <p><b>Email:</b> frederico.tavares@ufac.br</p>
+                                <p><b>Telefone:</b> 981009004</p>
+                                <p><b>Endereço:</b> UFAC</p>
+                                <p><b>Data Nascimento:</b> 12/12/2021</p>
+                                <hr>
+                                <p class="text-right"><button type="submit" class="btn btn-sm btn-success">EDITAR</button></p>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <p><b>Documentos I</b></p>
+                <label for="">Cópia de Documento de Identificação Oficial com Foto</label>
+                <p><input type="file" class="form-control"></p>
+
+                <label for="">Cópia do CPF (se não estiver contido no documento de identificação)</label>
+                <p><input type="file" class="form-control"></p>
+                <br>
+                <p class="text-right"><button type="submit" class="btn btn-primary">CADASTRAR</button></p>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col"><b>Documento Completo:</b> cnh.pdf </div>
+                    <div class="col text-right"><button type="submit" class="btn btn-sm btn-danger">excluir</button></div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col"><b>CPF:</b> </div>
+                    <div class="col text-right"><button type="submit" class="btn btn-sm btn-danger">excluir</button></div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <p><b>Documentos II</b></p>
+                <label for="">Comprovante de matrícula em curso de graduação ou técnico dispostos no item 2.2.1 e que
+                    atendam 2.2.2 ou certificado de conclusão/diploma no curso exigido como requisito mínimo</label>
+                <p><input type="file" class="form-control"></p>
+
+                <label for="">Termo de compromisso em formulário próprio, segundo modelo do ANEXO I</label>
+                <p><input type="file" class="form-control"></p>
+
+                <label for="">Cópia simples do histórico escolar dos cursos de graduação ou técnicos</label>
+                <p><input type="file" class="form-control"></p>
+                <br>
+                <p class="text-right"><button type="submit" class="btn btn-primary">CADASTRAR</button></p>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col"><b>Comprovante de matrícula:</b> </div>
+                    <div class="col text-right"><button type="submit" class="btn btn-sm btn-danger">excluir</button></div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col"><b>Termo de compromisso:</b> </div>
+                    <div class="col text-right"><button type="submit" class="btn btn-sm btn-danger">excluir</button></div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col"><b>Histórico escolar:</b> </div>
+                    <div class="col text-right"><button type="submit" class="btn btn-sm btn-danger">excluir</button></div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <p><b>Documentos III</b></p>
+                <label for="">Para os candidatos de vagas reservadas ao sistema de cotas (enviar documentação de acordo
+                    com a vaga que esteja se inscrevendo):</label>
+
+                    <label for="">(I) Termo de autodeclaração de pretos, pardos e indígenas, conforme modelo do Anexo II do
+                        Edital,   devidamente assinado.</label>
+                    <p><input type="file" class="form-control"></p>
+    
+                    <label for="">(II) Termo de autodeclaração de baixa renda, conforme modelo do Anexo III do Edital,
+                        devidamente assinado.</label>
+                    <p><input type="file" class="form-control"></p>
+                    <br>
+                <p class="text-right"><button type="submit" class="btn btn-primary">CADASTRAR</button></p>
+
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col"><b>(I) Termo de autodeclaração de pretos:</b> </div>
+                    <div class="col text-right"><button type="submit" class="btn btn-sm btn-danger">excluir</button></div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col"><b>(II) Termo de autodeclaração de baixa renda:</b> </div>
+                    <div class="col text-right"><button type="submit" class="btn btn-sm btn-danger">excluir</button></div>
+                </div>
+                <br>
+            </div>
+        </div>
+        <hr>
+
+    </div>
+
+    <br><br>
+<div class="text-center">
+Desenvolvimento e Banco - FREDERICO DE OLIVEIRA TAVARES | SUSIANE MARIA NASCIMENTO DA ROCHA TAVARES
+</div>
+    <br>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
