@@ -546,9 +546,10 @@ section {
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
-  margin-top: -2px;
+  margin: -2 0 32 0;
   border-left: 2px solid #66B2FF;
   position: relative;
+
 }
 
 .resume .resume-item h4 {
@@ -560,6 +561,13 @@ section {
   color: #66B2FF;
   margin-bottom: 10px;
 }
+
+.resume .discipline-title {
+  color: #66B2FF;
+}
+
+
+
 
 .resume .resume-item h5 {
   font-size: 16px;
