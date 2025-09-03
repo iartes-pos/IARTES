@@ -164,6 +164,7 @@ h6 {
 .nav-menu {
   padding: 0;
   display: block;
+
 }
 
 .nav-menu * {
@@ -202,7 +203,7 @@ h6 {
 
 .nav-menu a span,
 .nav-menu a:focus span {
-  padding: 0 5px 0 7px;
+  /* padding: 0 5px 0 7px; */
   color: #0563bb;
 }
 
@@ -431,7 +432,13 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #E6E6E6;
+  color: #FCFCFC;
+}
+
+.head-section-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .section-title h2::before {
@@ -1188,7 +1195,7 @@ section {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #728394;
+  color: #FCFCFC;
 }
 
 .contact .info .email,
@@ -1379,4 +1386,8 @@ section {
     margin-left: 0;
     left: 0;
   }
+}
+
+.alinhando{
+  text-align: justify;
 }
