@@ -384,6 +384,12 @@ h6 {
   .hero-logo {
     max-width: 90%;
     margin-bottom: 15px;
+    margin-top: 0;
+  }
+  
+  #hero-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -1407,6 +1413,59 @@ section {
   transition: all 0.3s ease;
 }
 
+/* Ajustes para telas médias */
+@media (max-width: 992px) {
+  .hero-edital {
+    font-size: 24px;
+    padding: 20px;
+    margin: 15px auto;
+  }
+  
+  .hero-edital span[style*="font-size: 32px"] {
+    font-size: 28px !important;
+    margin-bottom: 10px !important;
+  }
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 767px) {
+  .hero-edital {
+    font-size: 20px;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 95%;
+  }
+  
+  .hero-edital span[style*="font-size: 32px"] {
+    font-size: 24px !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .hero-edital a.btn {
+    padding: 8px 16px !important;
+    font-size: 16px !important;
+  }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 480px) {
+  .hero-edital {
+    font-size: 18px;
+    padding: 12px;
+    margin: 8px auto;
+  }
+  
+  .hero-edital span[style*="font-size: 32px"] {
+    font-size: 22px !important;
+    margin-bottom: 6px !important;
+  }
+  
+  .hero-edital a.btn {
+    padding: 6px 12px !important;
+    font-size: 14px !important;
+  }
+}
+
 .hero-edital::before {
   content: '';
   position: absolute;
@@ -1431,8 +1490,20 @@ section {
 }
 
 .editais {
-  margin: 30px 0;
+  margin: 30px 0 20px 0;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .editais {
+    margin: 20px 0 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .editais {
+    margin: 15px 0 5px 0;
+  }
 }
 .editais .edital {
   margin: 30px 0;
