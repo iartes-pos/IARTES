@@ -1391,3 +1391,58 @@ section {
 .alinhando{
   text-align: justify;
 }
+
+
+.hero-edital{
+  font-size: 28px;
+  font-weight: bold;
+  color: #FCFCFC;
+  padding: 25px;
+  border-radius: 15px;
+  background: rgba(10, 10, 50, 0.8);
+  margin: 20px auto;
+  max-width: 90%;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.hero-edital::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+}
+
+.hero-edital::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+}
+
+.hero-edital:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(102, 178, 255, 0.7);
+}
+
+.editais {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.hero-edital a {
+  color: #fcc858;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+.hero-edital a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
