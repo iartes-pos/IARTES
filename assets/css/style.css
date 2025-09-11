@@ -1434,6 +1434,10 @@ section {
   margin: 30px 0;
   text-align: center;
 }
+.editais .edital {
+  margin: 30px 0;
+  text-align: justify;
+}
 
 .hero-edital a {
   color: #fcc858;
