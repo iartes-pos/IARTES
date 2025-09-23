@@ -384,12 +384,6 @@ h6 {
   .hero-logo {
     max-width: 90%;
     margin-bottom: 15px;
-    margin-top: 0;
-  }
-  
-  #hero-container {
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
 }
 
@@ -1394,12 +1388,12 @@ section {
   }
 }
 
-.alinhando{
+.alinhando {
   text-align: justify;
 }
 
 
-.hero-edital{
+.hero-edital {
   font-size: 28px;
   font-weight: bold;
   color: #FCFCFC;
@@ -1420,7 +1414,7 @@ section {
     padding: 20px;
     margin: 15px auto;
   }
-  
+
   .hero-edital span[style*="font-size: 32px"] {
     font-size: 28px !important;
     margin-bottom: 10px !important;
@@ -1435,12 +1429,12 @@ section {
     margin: 10px auto;
     max-width: 95%;
   }
-  
+
   .hero-edital span[style*="font-size: 32px"] {
     font-size: 24px !important;
     margin-bottom: 8px !important;
   }
-  
+
   .hero-edital a.btn {
     padding: 8px 16px !important;
     font-size: 16px !important;
@@ -1454,12 +1448,12 @@ section {
     padding: 12px;
     margin: 8px auto;
   }
-  
+
   .hero-edital span[style*="font-size: 32px"] {
     font-size: 22px !important;
     margin-bottom: 6px !important;
   }
-  
+
   .hero-edital a.btn {
     padding: 6px 12px !important;
     font-size: 14px !important;
@@ -1505,6 +1499,7 @@ section {
     margin: 15px 0 5px 0;
   }
 }
+
 .editais .edital {
   margin: 30px 0;
   text-align: justify;
@@ -1520,4 +1515,18 @@ section {
 .hero-edital a:hover {
   color: #ffffff;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+#resultados {
+  font-size: 36px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#resultados span {
+ color: yellow;
+ font-size: 4rem;
+ line-height: 1;
 }
