@@ -1530,3 +1530,11 @@ section {
  font-size: 4rem;
  line-height: 1;
 }
+
+/* Fix para garantir que todas as imagens com rounded-circle sejam perfeitamente circulares */
+.rounded-circle {
+  width: 150px !important;
+  height: 150px !important;
+  object-fit: cover;
+  border-radius: 50% !important;
+}
