@@ -1525,10 +1525,17 @@ section {
   justify-content: center;
   gap: 10px;
 }
+
 #resultados span {
- color: yellow;
- font-size: 4rem;
- line-height: 1;
+  color: yellow;
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.resultado-final {
+  color: yellow;
+  font-weight: bold;
+  line-height: 1;
 }
 
 /* Fix para garantir que todas as imagens com rounded-circle sejam perfeitamente circulares */
