@@ -41,7 +41,7 @@
       "purpose": "any maskable"
     }
   ],
-  "categories": ["education", "technology", "programming", "software engineering", "test engineering"],
+  "categories": ["education", "technology", "programming", "software engineering", "test engineering", "qa"],
   "lang": "pt-BR",
   "scope": "/",
   "related_applications": [],
