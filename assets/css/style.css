@@ -614,8 +614,6 @@ section {
 }
 
 
-
-
 .resume .resume-item h5 {
   font-size: 16px;
   background: #f7f8f9;
@@ -647,6 +645,11 @@ section {
   top: 0;
   background: #fff;
   border: 2px solid #66B2FF;
+}
+
+/* Indicação de conclusão da disciplina */
+.resume .checked-ok::before {
+  background: yellow;
 }
 
 /*--------------------------------------------------------------
