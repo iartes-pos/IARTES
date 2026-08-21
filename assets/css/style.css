@@ -291,19 +291,27 @@ h6 {
 }
 
 .galeria {
-  display: flex;       /* Alinha os itens filhos lado a lado */
-  gap: 20px;           /* Cria um espaço de 20px entre as imagens */
-  align-items: flex-start; /* Garante que o topo dos blocos fique alinhado */
+  display: flex;
+  flex-wrap: wrap;       /* Permite quebra de linha quando não houver espaço */
+  gap: 20px;             /* Espaço de 20px entre as fotos (tanto do lado quanto abaixo) */
+  justify-content: space-between; /* Distribui o espaço restante igualmente */
 }
 
 .galeria figure {
-  width: 48%;          /* Cada bloco ocupa quase metade da largura total */
-  margin: 0;           /* Remove as margens padrão do navegador */
+  width: calc(50% - 10px); /* Calcula o tamanho exato tirando o desconto do espaçamento (gap) */
+  margin: 0;             /* Zera margens padrões */
+  display: flex;
+  flex-direction: column; /* Organiza a imagem e a legenda verticalmente dentro do bloco */
 }
 
 .galeria img {
-  width: 100%;         /* A imagem ocupa 100% do espaço do seu respectivo <figure> */
-  height: auto;        /* Mantém a proporção da imagem sem distorcer */
+  width: 100%;
+  height: auto;
+}
+
+.galeria figcaption {
+  margin-top: 8px;       /* Distância entre a foto e a legenda */
+  text-align: center;    /* Opcional: Centraliza o texto da legenda */
 }
 
 /*--------------------------------------------------------------
