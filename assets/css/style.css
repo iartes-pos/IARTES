@@ -290,6 +290,22 @@ h6 {
   background-color: #003366;
 }
 
+.galeria {
+  display: flex;       /* Alinha os itens filhos lado a lado */
+  gap: 20px;           /* Cria um espaço de 20px entre as imagens */
+  align-items: flex-start; /* Garante que o topo dos blocos fique alinhado */
+}
+
+.galeria figure {
+  width: 48%;          /* Cada bloco ocupa quase metade da largura total */
+  margin: 0;           /* Remove as margens padrão do navegador */
+}
+
+.galeria img {
+  width: 100%;         /* A imagem ocupa 100% do espaço do seu respectivo <figure> */
+  height: auto;        /* Mantém a proporção da imagem sem distorcer */
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
