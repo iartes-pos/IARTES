@@ -657,6 +657,7 @@ section {
 
 .resume .resume-item:last-child {
   padding-bottom: 0;
+  border-left: none;
 }
 
 .resume .resume-item::before {
