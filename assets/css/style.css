@@ -1157,43 +1157,68 @@ section {
 /*--------------------------------------------------------------
 # Alunos Section
 --------------------------------------------------------------*/
-/* Container que força as duas colunas a ficarem lado a lado */
-        .container-turmas {
-            display: grid;
-            grid-template-columns: 1fr 1fr; /* Divide a tela em duas colunas idênticas */
-            gap: 20px;                      /* Espaço de 20px entre as colunas */
-            width: 100%;                    /* Ocupa a largura total da tela */
-            max-width: 1000px;              /* Limite máximo para não esticar demais */
-            margin: 20px auto;              /* Centraliza o bloco na página */
-            font-family: Arial, sans-serif;
-            box-sizing: border-box;
-            padding: 0 10px;
-        }
+.turmas {
+  padding: 60px 0;
+}
 
-        /* Estilo de cada coluna */
-        .coluna-turma {
-            background-color: #f8f9fa;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-        }
+/* Força o comportamento de duas colunas lado a lado */
+.container-turmas {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide estritamente em duas colunas iguais */
+  gap: 30px;                      /* Espaçamento elegante entre as colunas */
+  width: 100%;
+  max-width: 1140px;              /* Alinhamento padrão com containers Bootstrap */
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
 
-        /* Títulos centrais */
-        .coluna-turma h2 {
-            text-align: center;
-            color: #333;
-            margin-top: 0;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 10px;
-        }
+/* Bloco individual de cada turma */
+.coluna-turma {
+  background: rgba(255, 255, 255, 0.05); /* Fundo sutil sem quebrar o tom escuro do site */
+  border: 1px solid rgba(102, 178, 255, 0.2); /* Borda fina usando o azul do tema */
+  border-radius: 8px;
+  padding: 30px;
+  transition: border-color 0.3s ease;
+}
 
-        /* Lista com os nomes dos alunos */
-        .coluna-turma ol {
-            padding-left: 20px;
-            line-height: 1.8;
-            color: #444;
-        }
+/* Efeito ao passar o mouse por cima da coluna */
+.coluna-turma:hover {
+  border-color: #66B2FF;
+}
 
+/* Cabeçalho da Turma */
+.coluna-turma h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #003366; /* Linha divisória interna com o azul escuro */
+}
+
+/* Lista numérica de alunos */
+.coluna-turma ol {
+  font-family: "Open Sans", sans-serif;
+  color: #E6E6E6;
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+/* Cada item/nome da lista */
+.coluna-turma ol li {
+  font-size: 16px;
+  line-height: 2; /* Espaçamento confortável para leitura */
+}
+
+/* Marcador numérico com a cor de destaque do template */
+.coluna-turma ol li::marker {
+  color: #66B2FF;
+  font-weight: bold;
+}
 
 
 
