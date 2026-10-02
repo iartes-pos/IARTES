@@ -1224,6 +1224,16 @@ ul{
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .container-turmas {
+    grid-template-columns: 1fr; /* Muda para apenas uma coluna, empilhando os cards */
+    gap: 20px;                  /* Reduz um pouco o espaçamento para telas menores */
+  }
+
+  .coluna-turma {
+    padding: 20px;              /* Ajusta o espaçamento interno do card no celular */
+  }
+}
 
 
 /*--------------------------------------------------------------
