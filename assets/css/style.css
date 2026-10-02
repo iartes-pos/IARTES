@@ -1175,7 +1175,7 @@ section {
 
 /* Bloco individual de cada turma */
 .coluna-turma {
-  background:#0563bb;/* rgba(255, 255, 255, 0.05); /* Fundo sutil sem quebrar o tom escuro do site */
+  background: #004080;/* rgba(255, 255, 255, 0.05); /* Fundo sutil sem quebrar o tom escuro do site */
   border: 1px solid rgba(102, 178, 255, 0.2); /* Borda fina usando o azul do tema */
   border-radius: 8px;
   padding: 30px;
