@@ -1175,12 +1175,34 @@ section {
 
 /* Bloco individual de cada turma */
 .coluna-turma {
-  background: #004080;/* rgba(255, 255, 255, 0.05); /* Fundo sutil sem quebrar o tom escuro do site */
+  background: rgba(5, 26, 61, 0.3);;/* rgba(255, 255, 255, 0.05); /* Fundo sutil sem quebrar o tom escuro do site */
   border: 1px solid rgba(102, 178, 255, 0.2); /* Borda fina usando o azul do tema */
   border-radius: 8px;
   padding: 30px;
   transition: border-color 0.3s ease;
 }
+
+/*
+box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+}
+
+/* Estilos para os cards da seção team 
+.services .card {
+  background: #051a3d;
+  /* border: 1px solid #0a2a5c; 
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 5px 20px rgba(5, 26, 61, 0.3);
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.services .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 30px rgba(5, 26, 61, 0.5);
+  /* border-color: #66B2FF; */
+*/
 
 /* Efeito ao passar o mouse por cima da coluna */
 .coluna-turma:hover {
