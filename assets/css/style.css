@@ -1155,6 +1155,49 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Alunos Section
+--------------------------------------------------------------*/
+/* Container que força as duas colunas a ficarem lado a lado */
+        .container-turmas {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Divide a tela em duas colunas idênticas */
+            gap: 20px;                      /* Espaço de 20px entre as colunas */
+            width: 100%;                    /* Ocupa a largura total da tela */
+            max-width: 1000px;              /* Limite máximo para não esticar demais */
+            margin: 20px auto;              /* Centraliza o bloco na página */
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+            padding: 0 10px;
+        }
+
+        /* Estilo de cada coluna */
+        .coluna-turma {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        /* Títulos centrais */
+        .coluna-turma h2 {
+            text-align: center;
+            color: #333;
+            margin-top: 0;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+        /* Lista com os nomes dos alunos */
+        .coluna-turma ol {
+            padding-left: 20px;
+            line-height: 1.8;
+            color: #444;
+        }
+
+
+
+
+/*--------------------------------------------------------------
 # Partners Section
 --------------------------------------------------------------*/
 .partners-section {
